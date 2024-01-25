@@ -1,7 +1,8 @@
 ﻿// Your program should start at this line.
 int moveCount = 0;
 
-for (int i = 0; i < 3; i++)
+
+for (int i = 0; i < 37; i++)
 {
     if (Peek())
     {
@@ -10,18 +11,17 @@ for (int i = 0; i < 3; i++)
     }
 }
 Turn();
+Console.WriteLine("Turn right");
 
-for (int j = 0; j < 2; j++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
 Turn();
+Console.WriteLine("Turn right");
 
-for (int k = 0; k < 5; k++)
+for (int j = 0; j < 36; j++)
 {
     if (Peek())
     {
@@ -29,20 +29,36 @@ for (int k = 0; k < 5; k++)
         Console.WriteLine(moveCount);
     }
 }
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int k = 0; k < 36; k++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+
 Turn();
+Console.WriteLine("Turn right");
 
-for (int l = 0; l < 4; l++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
 Turn();
-//under car
+Console.WriteLine("Turn right");
 
-for (int m = 0; m < 7; m++)
+for (int l = 0; l < 36; l++)
 {
     if (Peek())
     {
@@ -50,91 +66,37 @@ for (int m = 0; m < 7; m++)
         Console.WriteLine(moveCount);
     }
 }
+
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int m = 0; m < 36; m++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+
 Turn();
+Console.WriteLine("Turn right");
 
-for (int n = 0; n < 6; n++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
 Turn();
+Console.WriteLine("Turn right");
 
-for (int n = 0; n < 9; n++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-//over car
-
-for (int o = 0; o < 8; o++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-
-for (int p = 0; p < 11; p++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-
-for (int q = 0; q < 10; q++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-
-for (int r = 0; r < 13; r++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-//upper right corner
-
-for (int s = 0; s < 12; s++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-
-for (int t = 0; t < 15; t++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-Turn();
-
-for (int u = 0; u < 14; u++)
+for (int n = 0; n < 36; n++)
 {
     if (Peek())
     {
@@ -143,11 +105,30 @@ for (int u = 0; u < 14; u++)
     }
 }
 
-if (AtGoal())
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int o = 0; o < 38; o++)
 {
-    Console.WriteLine("You made it past the finish line");
-    return;
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+    
 }
+if (AtGoal());
+    {
+        Console.WriteLine("Congratulations, you have won!");
+        return;
+    }
+
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
@@ -162,10 +143,17 @@ void Move()
 void Turn()
 {
     // Turns the car 90 deg clockwise.
-    Console.WriteLine("Turned right");
+    
     
 }
-
+void TurnLeft()
+{
+    Console.WriteLine("Turned left");
+    for (int turns = 0; turns < 3; turns++);
+    {
+        Turn();
+    }
+}
 
 bool Peek()
 {
@@ -180,3 +168,5 @@ bool AtGoal()
 }
 
 #endregion
+
+
