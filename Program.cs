@@ -1,178 +1,153 @@
 ﻿// Your program should start at this line.
 int moveCount = 0;
 
-for (int i = 0; i < 11; i++)
+for (int i = 0; i < 3; i++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
-
 Turn();
-Console.WriteLine("Turn right");
 
-Move();
-Move();
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int j = 0; j < 10; j++)
+for (int j = 0; j < 2; j++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
-TurnLeft();
+Turn();
 
-Move();
-Move();
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-for (int k = 0; k < 10 ; k++)
+for (int k = 0; k < 5; k++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
 Turn();
-Console.WriteLine("Turn right");
 
-Move();
-Move();
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int l = 0; l < 10; l++)
+for (int l = 0; l < 4; l++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
-
-TurnLeft();
+Turn();
+//under car
 
 for (int m = 0; m < 7; m++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-Move();
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int n = 0; n < 5; n++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
 Turn();
-Console.WriteLine("Turn right");
 
-Move();
-Move();
-Console.WriteLine(moveCount);
-
+for (int n = 0; n < 6; n++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
 Turn();
-Console.WriteLine("Turn right");
 
-for (int o = 0; o < 5; o++)
+for (int n = 0; n < 9; n++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-Move();
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int p = 0; p < 5; p++)
-{
-    if (Peek())
-    {
-        Move();
-       
-    }
-}
- Console.WriteLine(moveCount);
-
 Turn();
-Console.WriteLine("Turn right");
+//over car
 
-Move();
-Move();
-Console.WriteLine(moveCount);
-
+for (int o = 0; o < 8; o++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
 Turn();
-Console.WriteLine("Turn right");
 
-for (int q = 0; q < 5; q++)
+for (int p = 0; p < 11; p++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
+Turn();
 
-TurnLeft();
-
-for (int r = 0; r < 4; r++)
+for (int q = 0; q < 10; q++)
 {
     if (Peek())
     {
         Move();
-        
+        Console.WriteLine(moveCount);
     }
 }
-Console.WriteLine(moveCount);
+Turn();
 
-if (AtGoal());
+for (int r = 0; r < 13; r++)
+{
+    if (Peek())
     {
-        Console.WriteLine("Congratulations, you have won!");
-        return;
+        Move();
+        Console.WriteLine(moveCount);
     }
+}
+Turn();
+//upper right corner
 
+for (int s = 0; s < 12; s++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+Turn();
 
+for (int t = 0; t < 15; t++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+Turn();
 
+for (int u = 0; u < 14; u++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+
+if (AtGoal())
+{
+    Console.WriteLine("You made it past the finish line");
+    return;
+}
 
 #region Basic functions
 // These functions are just her to make your intelisense work. 
@@ -187,17 +162,10 @@ void Move()
 void Turn()
 {
     // Turns the car 90 deg clockwise.
-    
+    Console.WriteLine("Turned right");
     
 }
-void TurnLeft()
-{
-    Console.WriteLine("Turned left");
-    for (int turns = 0; turns < 3; turns++);
-    {
-        Turn();
-    }
-}
+
 
 bool Peek()
 {
@@ -212,5 +180,3 @@ bool AtGoal()
 }
 
 #endregion
-
-
