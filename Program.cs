@@ -2,7 +2,7 @@
 int moveCount = 0;
 
 
-for (int i = 0; i < 37; i++)
+for (int i = 0; i < 3; i++)
 {
     if (Peek())
     {
@@ -13,15 +13,7 @@ for (int i = 0; i < 37; i++)
 Turn();
 Console.WriteLine("Turn right");
 
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int j = 0; j < 36; j++)
+for (int j = 0; j < 7; j++)
 {
     if (Peek())
     {
@@ -29,16 +21,10 @@ for (int j = 0; j < 36; j++)
         Console.WriteLine(moveCount);
     }
 }
-TurnLeft();
-
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
 
 TurnLeft();
 
-for (int k = 0; k < 36; k++)
+for (int k = 0; k < 4; k++)
 {
     if (Peek())
     {
@@ -50,15 +36,7 @@ for (int k = 0; k < 36; k++)
 Turn();
 Console.WriteLine("Turn right");
 
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int l = 0; l < 36; l++)
+for (int l = 0; l < 6; l++)
 {
     if (Peek())
     {
@@ -69,34 +47,7 @@ for (int l = 0; l < 36; l++)
 
 TurnLeft();
 
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-for (int m = 0; m < 36; m++)
-{
-    if (Peek())
-    {
-        Move();
-        Console.WriteLine(moveCount);
-    }
-}
-
-Turn();
-Console.WriteLine("Turn right");
-
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int n = 0; n < 36; n++)
+for (int m = 0; m < 5; m++)
 {
     if (Peek())
     {
@@ -107,27 +58,19 @@ for (int n = 0; n < 36; n++)
 
 TurnLeft();
 
-Move();
-Console.WriteLine(moveCount);
-Move();
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-for (int o = 0; o < 38; o++)
+for (int n = 0; n < 14; n++)
 {
     if (Peek())
     {
         Move();
         Console.WriteLine(moveCount);
     }
-    
 }
-if (AtGoal());
-    {
-        Console.WriteLine("Congratulations, you have won!");
-        return;
-    }
+if (AtGoal())
+{
+    Console.WriteLine("You are done");
+    return;
+}
 
 
 #region Basic functions
