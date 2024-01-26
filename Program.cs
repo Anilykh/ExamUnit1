@@ -2,230 +2,7 @@
 int moveCount = 0;
 
 
-for (int i = 0; i < 4; i++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-for (int j = 0; j < 4; j++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-Move();
-Console.WriteLine(moveCount);
-
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-
-Console.WriteLine(moveCount);
-
-for (int k = 0; k < 3; k++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-
-for (int l = 0; l < 5; l++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount); 
-
-TurnLeft();
-
-for (int m = 0; m < 3; m++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-TurnLeft();
-Move();
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int n = 0; n < 5; n++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int o= 0; o < 3; o++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int p = 0; p < 3; p++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int q = 0; q < 3; q++)
-{
-    if (Peek())
-    {
-        Move();
-       
-    }
-}
-Console.WriteLine(moveCount);
-
-TurnLeft();
-
-for (int r = 0; r < 3; r++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-
-for (int s = 0; s < 5; s++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-
-for (int t = 0; t < 4; t++)
-{
-    if (Peek())
-    {
-        Move();
-        
-    }
-}
-Console.WriteLine(moveCount);
-
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-TurnLeft();
-Move();
-Move();
-Console.WriteLine(moveCount);
-Turn();
-Console.WriteLine("Turn right");
-Move();
-Console.WriteLine(moveCount);
-
-for (int u = 0; u < 4; u++)
+for (int i = 0; i < 37; i++)
 {
     if (Peek())
     {
@@ -235,7 +12,33 @@ for (int u = 0; u < 4; u++)
 }
 Turn();
 Console.WriteLine("Turn right");
-for (int v = 0; v < 3; v++)
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+Turn();
+Console.WriteLine("Turn right");
+
+for (int j = 0; j < 36; j++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int k = 0; k < 36; k++)
 {
     if (Peek())
     {
@@ -244,11 +47,87 @@ for (int v = 0; v < 3; v++)
     }
 }
 
-if (AtGoal())
+Turn();
+Console.WriteLine("Turn right");
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+Turn();
+Console.WriteLine("Turn right");
+
+for (int l = 0; l < 36; l++)
 {
-    Console.WriteLine("You made");
-    return;
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
 }
+
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int m = 0; m < 36; m++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+
+Turn();
+Console.WriteLine("Turn right");
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+Turn();
+Console.WriteLine("Turn right");
+
+for (int n = 0; n < 36; n++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+}
+
+TurnLeft();
+
+Move();
+Console.WriteLine(moveCount);
+Move();
+Console.WriteLine(moveCount);
+
+TurnLeft();
+
+for (int o = 0; o < 38; o++)
+{
+    if (Peek())
+    {
+        Move();
+        Console.WriteLine(moveCount);
+    }
+    
+}
+if (AtGoal());
+    {
+        Console.WriteLine("Congratulations, you have won!");
+        return;
+    }
 
 
 #region Basic functions
